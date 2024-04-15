@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    background: url('pagina.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body{
+    margin: 0;
+    background-color:#414141 ;
+}
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    padding: 20px 100px;
+    background:linear-gradient(144deg, #000000 , #010321 50%, #290101)  ;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.h1{
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 20px;
+    
+    
+}
+
+
+
+#carouselContainer {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    border: 2px solid rgb(9, 135, 246);
+    border-radius: 10px;
+    margin: 50px auto 0; /* Margen superior para centrarlo debajo del navbar */
+    overflow: hidden; /* Para recortar la imagen que exceda los límites del contenedor */
+}
+
+.carousel-inner img {
+    max-width: 100%; /* Establecer un tamaño máximo para las imágenes */
+    max-height: 100%; /* Establecer un tamaño máximo para las imágenes */
+    width: auto; /* Hacer que la imagen se ajuste proporcionalmente */
+    height: auto; /* Hacer que la imagen se ajuste proporcionalmente */
+    object-fit: contain; /* Hacer que la imagen se ajuste dentro del contenedor manteniendo su relación de aspecto */
+    transition: transform 0.3s ease; /* Agregar transición para el efecto de zoom */
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.1); /* Aplicar un aumento de escala al pasar el mouse sobre la imagen */
+}
+
+#tienda {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #eceff1;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 100%; /* Ocupar todo el alto disponible */
+    border-radius: 10px;
+    margin-top: 50px; /* Margen superior para centrarlo debajo del navbar */
+    overflow: hidden; /* Para recortar la imagen que exceda los límites del contenedor */
+}
+
