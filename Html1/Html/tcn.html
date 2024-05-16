@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Importaciones de las de css y el logo-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/Index/tcn.css">
+    <link rel="icon" href="Img/descarga.png" type="img/png">
+    <script src="style/Index/js/form_tcn.js"></script>
+    <script src="style/Index/js/captcha.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <!--Login-->
+    <div class="box">
+
+        <div class="login wrap" style="content: fill;" >
+            <div class="h1" style="margin-right:100 px;">¡Trabaja con nosotros!</div>
+            <input type="text" placeholder="Nombres" id="nombres">
+            <input type="text" placeholder="Apellido paterno" id = 'app'>
+            <input type="text" placeholder="Apellido materno" id = 'apm'>
+            <input type="number" placeholder="Edad" id= 'edad'>
+            <input type="text" placeholder="Rut" id="rut">
+            <input type="text" placeholder="Celular" id = 'celular'>
+            <input type="date" id = 'fecha'>
+            <input type="file" id='file'>
+            <textarea placeholder="Detalles de la carta" id="carta" cols="30" rows="10" style="border-color: black; border-radius: 10px; margin-top: 20px;"></textarea>
+            <!--Mostrar widget del recaptcha v2-->
+            <div class="g-recaptcha" data-sitekey="6LdbTNspAAAAANvjSRFF9j-Ratm3HtUNF8GLH9WK"></div>
+            <input type="submit"  class= "btn" value="Enviar solicitud" id="user" onclick="submitForm()">
+
+        </div>
+    </div>
+
+
+</body>
+</html>

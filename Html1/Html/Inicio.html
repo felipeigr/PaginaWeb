@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Importaciones de css y librerias de boostrap y logo de la tienda-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/Index/stylesIndex.css">
+    <link rel="icon" href="Img/descarga.png" type="img/png">
+    <title>PentaKill</title>
+</head>
+<body class="body">
+    <!--Barra de navegacion-->
+    <header class="header">
+
+        <a href="Vista1.html"><img src="Img/descarga.png" alt="" height="60" width="60"></a>
+    
+        <nav class="navbar navbar-expand-lg">
+        <a href="login.html">Iniciar Sesion</a>
+        <a href="lol_tienda.html">League of legends</a>
+        <a href="Valorant_tienda.html">Valorant</a>
+        <a href="VistaRP.html">Puntos RP/ VRP</a>
+        
+        <input type="text" name="" id="" placeholder="buscar" style="border-radius: 10px; margin-left: 10px;">
+    
+        </nav>
+    </header>
+    
+        <!--Contenedor del carrucel para evitar bugs visuales, usar resolucion de las imagenes-->
+        <div id="carouselContainer">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Img/polera_tank.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Polera Tahm Kench</h5>
+                        <p>Oficial</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/Chaqueta_lol.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chaqueta Reversible Kai'Sa/Akali</h5>
+                        <p>Oficial</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Wingman.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wingman</h5>
+                        <p>Oficial</p>
+                    </div>
+                </div>
+            </div>
+            <!--Botonones del Rotacion de imagenes del carrucel-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Contenedor de la tienda Con botones Modals y Popovers-->
+    <div id="tienda">
+        <!-- peluche 3 -->
+    <div class="card-group cardContainer">
+        <div class="card" style="width: 10rem;">
+            <img src="img/Worlds_2023_Ahri_Fox_Plush_Ecomm_Image_1.png" class ="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title"> Peluche Ahri</h5>
+                <p class="card-text"> Oficial</p>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Detalles
+                </button> 
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Objeto agregado!">
+                    Añadir carrito
+                  </button>    
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tibbers</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            15cm de altura 
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+                            <a href="VistaCarrito.html">
+                            <button type="button" class="btn btn-primary">comprar</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- peluche 2 -->
+        <div class="card card2" style="width: 10rem;">
+            <img src="img/Yone_Figure_Ecomm_Image_1.png" class ="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title"> Figura Yone</h5>
+                <p class="card-text"> Oficial</p>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Detalles
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Objeto agregado!">
+                    Añadir carrito
+                  </button>
+                
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tibbers</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                15cm de altura 
+                            </div>
+                            <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+                            <a href="VistaCarrito.html">
+                            <button type="button" class="btn btn-primary">comprar</button>
+                            </a>
+                            <button></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Peluche 1 -->
+        <div class="card card2" style="width: 18rem;">
+            <img src="img/Worlds-2023_Tibbers_Ecomm_2560x2560.png" class ="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title"> Peluche Tibbers</h5>
+                <p class="card-text"> Oficial</p>
+
+
+                
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Detalles
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Objeto agregado!">
+                    Añadir carrito
+                  </button>
+                
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tibbers</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            15cm de altura 
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerra</button>
+                            <a href="VistaCarrito.html">
+                            <button type="button" class="btn btn-primary">comprar</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<!--Importancion de los popovers-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script><!-- script de los popovers-->
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+</html>
